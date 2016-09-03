@@ -3,8 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Simple Form Registration</title>
+
+	<!-- Style files -->
+	<link rel="stylesheet" href="styles/main.css">
+
+	<!-- Script files -->
+	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+	<!-- Main Site Wrapper -->
+	<div class="wrapper">
+		<!-- Site Header -->
+		<header>
+			<h1><i>loveknitting</i>Registration Exercise</h1>
+		</header>
+		<!-- Main Site Block -->
+		<main>
+			<!-- Registration Form  -->
+			<form action="/">
 
+				<label for="customerEmail">Email</label>
+				<input type="text" id="customerEmail" placeholder="example@example.com">
+
+				<label for="customerBirthday">Birthday</label>
+				<input type="text" id="customerBirthday" value="dd/mm/yyyy">
+
+				<label for="customerPassword">Password</label>
+				<input type="text" id="customerPassword">
+
+				<label for="customerRepeatPassword">Confirm Password</label>
+				<input type="text" id="customerRepeatPassword">
+
+				<input type="submit" value="Register">
+
+			</form>
+		</main>
+	</div>
 </body>
 </html>
