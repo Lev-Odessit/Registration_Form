@@ -63,7 +63,13 @@ body {
 			cursor: pointer;
 		}
 
-.clear {
-	clear: both;
-	height:5px;
+@media (max-width: 768px) {
+
+	.wrapper header h1 i {
+		display: none;
+	}
+
+	.wrapper main form .form_row label {
+		padding: 0 0 5px;
+	}
 }
