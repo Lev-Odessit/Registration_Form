@@ -71,5 +71,7 @@ body {
 
 	.wrapper main form .form_row label {
 		padding: 0 0 5px;
+		display: block;
 	}
+
 }
