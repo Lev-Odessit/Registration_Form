@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Simple Form Registration</title>
 
 	<!-- Style files -->
@@ -21,21 +21,23 @@
 		<main>
 			<!-- Registration Form  -->
 			<form action="/">
-
-				<label for="customerEmail">Email</label>
-				<input type="text" id="customerEmail" placeholder="example@example.com">
-
-				<label for="customerBirthday">Birthday</label>
-				<input type="text" id="customerBirthday" value="dd/mm/yyyy">
-
-				<label for="customerPassword">Password</label>
-				<input type="text" id="customerPassword">
-
-				<label for="customerRepeatPassword">Confirm Password</label>
-				<input type="text" id="customerRepeatPassword">
-
+				<div class="form_row">
+					<label for="customerEmail">Email</label>
+					<input type="text" id="customerEmail" placeholder="example@example.com">
+				</div>
+				<div class="form_row">
+					<label for="customerBirthday">Birthday</label>
+					<input type="text" id="customerBirthday" value="dd/mm/yyyy">
+				</div>
+				<div class="form_row">
+					<label for="customerPassword">Password</label>
+					<input type="password" id="customerPassword">
+				</div>
+				<div class="form_row">
+					<label for="customerRepeatPassword">Confirm Password</label>
+					<input type="password" id="customerRepeatPassword">
+				</div>
 				<input type="submit" value="Register">
-
 			</form>
 		</main>
 	</div>
