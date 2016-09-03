@@ -6,7 +6,7 @@
 
 	<!-- Style files -->
 	<link rel="stylesheet" href="styles/main.css">
-	<!-- JQuery library for AJAX -->
+	<!-- JQuery library to send information from form with AJAX -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Script files -->
 	<script src="scripts/main.js"></script>
@@ -24,19 +24,19 @@
 			<form role="form">
 				<div class="form_row">
 					<label for="customerEmail">Email</label>
-					<input type="text" id="customerEmail" placeholder="example@example.com" name="email">
+					<input type="text" id="customerEmail" placeholder="example@example.com" name="email" required>
 				</div>
 				<div class="form_row">
 					<label for="customerBirthday">Birthday</label>
-					<input type="text" id="customerBirthday" value="dd/mm/yyyy" name="birthday">
+					<input type="text" id="customerBirthday" value="dd/mm/yyyy" name="birthday" required>
 				</div>
 				<div class="form_row">
 					<label for="customerPassword">Password</label>
-					<input type="password" id="customerPassword" name="password">
+					<input type="password" id="customerPassword" name="password" required>
 				</div>
 				<div class="form_row">
 					<label for="customerRepeatPassword">Confirm Password</label>
-					<input type="password" id="customerRepeatPassword">
+					<input type="password" id="customerRepeatPassword" required>
 				</div>
 				<input id="button" type="submit" value="Register">
 			</form>
