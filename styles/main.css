@@ -17,7 +17,7 @@ body {
 
 	.wrapper header h1 {
 		color: #777;
-		padding: 0 0 0 75px;
+		padding: 0 0 0 80px;
 	}
 		.wrapper header h1:before {
 			content: '';
@@ -29,6 +29,7 @@ body {
 			height: 72px;
 			top: 10px;
 			left: 0;
+			margin: 0 0 0 5px;
 		}
 
 		.wrapper header h1 i {
