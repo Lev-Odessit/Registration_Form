@@ -17,17 +17,17 @@ body {
 
 	.wrapper header h1 {
 		color: #777;
-		padding: 0 0 0 80px;
+		padding: 2px 0 0 215px;
 	}
 		.wrapper header h1:before {
 			content: '';
 			position: absolute;
 			display: block;
-			background: url("../images/logo-loveknitting-sm.svg") no-repeat;
-			background-size: 72px 72px;
-			width: 72px;
-			height: 72px;
-			top: 10px;
+			background: url("../images/logo-loveknitting.svg") no-repeat;
+			background-size: 200px 96px;
+			width: 200px;
+			height: 96px;
+			top: 0;
 			left: 0;
 			margin: 0 0 0 5px;
 		}
@@ -66,9 +66,15 @@ body {
 
 @media (max-width: 768px) {
 
-	.wrapper header h1 i {
-		display: none;
+	.wrapper header h1 {
+		padding: 0 0 0 80px;
 	}
+		.wrapper header h1:before {
+			background: url("../images/logo-loveknitting-sm.svg") no-repeat;
+			background-size: 72px 72px;
+			width: 72px;
+			height: 72px;
+		}
 
 	.wrapper main form .form_row label {
 		padding: 0 0 5px;
