@@ -26,7 +26,7 @@ $(function(){
 
 			submitBtn.attr('disabled', 'disabled');
 
-			var str = JSON.parse(JSON.stringify(form.serializeArray()));
+			var str = form.serializeArray();
 
 			$.ajax({
 				// Need to uncommits when it will be setup with DB
