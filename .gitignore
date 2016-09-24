@@ -1,5 +1,8 @@
+# app build #
+app/build
+
 # Third-party dependencies #
-app/bower_components
+bower_components
 node_modules
 
 # IDE files #
