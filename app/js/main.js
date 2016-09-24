@@ -10,15 +10,13 @@ document.addEventListener('DOMContentLoaded', function () {
 			this.setUpListeners();
 		},
 
-
 		setUpListeners: function () {
-			var form = document.getElemenetById('getForm');
-
+			var form = document.getElementById('getForm');
 			form.addEventListener('submit', registrationApp.submitForm);
 		},
 
-		submitForm: function (e) {
-			e.preventDefault();
+		submitForm: function (event) {
+			event.preventDefault();
 
 			var form = document.getElementById('regForm'),
 				submitBtn = document.getElementById('regBtn');
