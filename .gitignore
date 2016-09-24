@@ -1,2 +1,5 @@
+# Third-party dependencies #
+app/bower_components
+
 # IDE files #
 .idea
