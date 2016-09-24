@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			var form = document.getElementById('regForm'),
 				submitBtn = document.getElementById('regBtn');
 
-			if (registrationApp.validateForm(form) === false) {
+			if (registrationApp.validateForm() === false) {
 				alert('Passwords do not match');
 				return false;
 			}
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			return obj;
 		},
 
-		validateForm: function (form) {
+		validateForm: function () {
 
 			var password = $('#customerPassword').val(),
 				confirmPassword = $('#customerRepeatPassword').val();
