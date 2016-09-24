@@ -27,8 +27,6 @@ registrationApp = {
 			return false;
 		}
 
-		submitBtn.setAttribute('disabled', 'disabled');
-
 		var str = registrationApp.serializeForm(form);
 
 		$.ajax({
