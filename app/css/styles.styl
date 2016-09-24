@@ -1,82 +1,62 @@
-body {
-	padding: 0;
-	margin: 0;
-	font-size: 100%;
-	background: #ccc;
-	font-family: Arial,sans-serif;
-}
+body
+	padding 0
+	margin 0
+	font-size 100%
+	background #ccc
+	font-family Arial,sans-serif
+.wrapper
+	max-width: 960px
+	margin 0 auto
+	.wrapper header
+		padding 10px 0
+		position relative
+	.wrapper header h1
+		color #777
+		padding 2px 0 0 215px
+		.wrapper header h1:before
+			content ''
+			position absolute
+			display block
+			background url("../../images/logo-loveknitting.svg") no-repeat
+			background-size 200px 96px
+			width 200px
+			height 96px
+			top 0
+			left 0
+			margin 0 0 0 5px
+	.wrapper main
+		background white
+		padding 10px 20px 30px
+		.wrapper main #regForm .form_row
+			margin 15px 0 0
+			.wrapper main #regForm .form_row label
+				min-width 150px
+				display inline-block
+				color #464646
+			.wrapper main #regForm .form_row input
+				min-width 200px
+				display inline-block
+				padding 5px
+		.wrapper main #regForm #regBtn
+			margin 30px 0 0
+			background lightseagreen
+			color white
+			padding 5px 10px
+			border 0
+			cursor pointer
+			.wrapper main #regForm #regBtn:disabled
+				border 0
+				outline none
+				background #d8e6e8
 
-.wrapper {
-	max-width: 960px;
-	margin: 0 auto;
-}
-	.wrapper header {
-		padding: 10px 0;
-		position: relative;
-	}
-
-	.wrapper header h1 {
-		color: #777;
-		padding: 2px 0 0 215px;
-	}
-		.wrapper header h1:before {
-			content: '';
-			position: absolute;
-			display: block;
-			background: url("../images/logo-loveknitting.svg") no-repeat;
-			background-size: 200px 96px;
-			width: 200px;
-			height: 96px;
-			top: 0;
-			left: 0;
-			margin: 0 0 0 5px;
-		}
-
-	.wrapper main {
-		background: white;
-		padding: 10px 20px 30px;
-	}
-
-		.wrapper main #regForm .form_row {
-			margin: 15px 0 0;
-		}
-			.wrapper main #regForm .form_row label {
-				min-width: 150px;
-				display: inline-block;
-				color: #464646;
-			}
-			.wrapper main #regForm .form_row input {
-				min-width: 200px;
-				display: inline-block;
-				padding: 5px;
-			}
-		.wrapper main #regForm #regBtn {
-			margin: 30px 0 0;
-			background: lightseagreen;
-			color: white;
-			padding: 5px 10px;
-			border: 0;
-			cursor: pointer;
-		}
-			.wrapper main #regForm #regBtn:disabled {
-				background: #d8e6e8;
-			}
-
-@media (max-width: 768px) {
-
-	.wrapper header h1 {
-		padding: 0 0 0 80px;
-	}
-		.wrapper header h1:before {
-			background: url("../images/logo-loveknitting-sm.svg") no-repeat;
-			background-size: 72px 72px;
-			width: 72px;
-			height: 72px;
-		}
-
-	.wrapper main #regForm .form_row label {
-		padding: 0 0 5px;
-		display: block;
-	}
-
-}
+@media screen and (max-width: 768px)
+	.wrapper header h1
+		padding 0 0 0 80px
+		.wrapper header h1:before
+			background url("../../images/logo-loveknitting-sm.svg") no-repeat
+			background-size 72px 72px
+			width 72px
+			height 72px
+	.wrapper main #regForm .form_row label
+		padding 0 0 5px
+		display block
