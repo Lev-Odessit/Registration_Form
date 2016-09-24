@@ -30,9 +30,6 @@ registrationApp = {
 		var str = registrationApp.serializeForm(form);
 
 		$.ajax({
-			// Need to uncommits when it will be setup with DB
-			// url: 'action/registration.php',
-			// type: 'POST',
 			data: str,
 			success: function () {
 				alert('Welcome ' + str.email);
