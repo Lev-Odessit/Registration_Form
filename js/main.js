@@ -27,12 +27,12 @@ registrationApp = {
 			return false;
 		}
 
-		var str = registrationApp.serializeForm(form);
+		var customerInfo = registrationApp.serializeForm(form);
 
 		$.ajax({
-			data: str,
+			data: customerInfo,
 			success: function () {
-				alert('Welcome ' + str.email);
+				alert('Welcome ' + customerInfo.firstName + customerInfo.secondName);
 				location.reload();
 			}
 		})
