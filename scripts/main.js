@@ -27,7 +27,7 @@ $(function(){
 
 			submitBtn.setAttribute('disabled', 'disabled');
 
-			var str = form.serializeArray();
+			var str = registrationApp.serialize(form);
 
 			$.ajax({
 				// Need to uncommits when it will be setup with DB
