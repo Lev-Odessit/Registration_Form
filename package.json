@@ -4,6 +4,7 @@
   "devDependencies": {
     "eslint": "^3.6.0",
     "gulp": "^3.9.1",
+    "gulp-stylus": "^2.5.0",
     "wiredep": "^4.0.0"
   }
 }
