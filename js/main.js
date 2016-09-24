@@ -20,7 +20,7 @@ registrationApp = {
 		e.preventDefault();
 
 		var form = document.getElementById('regForm'),
-			submitBtn = document.getElementById('button');
+			submitBtn = document.getElementById('regBtn');
 
 		if (registrationApp.validateForm(form) === false) {
 			alert('Passwords do not match');
