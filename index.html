@@ -23,23 +23,32 @@
 			<!-- Registration Form  -->
 			<form role="form" id="regForm">
 				<div class="form_row">
-					<label for="customerEmail">Email</label>
+					<label for="customerEmail">First Name :</label>
+					<input type="text" id="customerFirstName" placeholder="First Name" name="firstName" required>
+				</div>
+				<div class="form_row">
+					<label for="customerEmail">Second Name :</label>
+					<input type="text" id="customerSecondName" placeholder="Second Name" name="secondName" required>
+				</div>
+				<div class="form_row">
+					<label for="customerEmail">Email :</label>
 					<input type="text" id="customerEmail" placeholder="example@example.com" name="email" required>
 				</div>
 				<div class="form_row">
-					<label for="customerBirthday">Birthday</label>
-					<input type="text" id="customerBirthday" value="dd/mm/yyyy" name="birthday" required>
+					<label for="customerBirthday">Birthday :</label>
+					<input type="text" id="customerBirthday" placeholder="dd/mm/yyyy" name="birthday" required>
 				</div>
 				<div class="form_row">
-					<label for="customerPassword">Password</label>
-					<input type="password" id="customerPassword" name="password" required>
+					<label for="customerPassword">Password :</label>
+					<input type="password" id="customerPassword" name="password" placeholder="Type your password please" required>
 				</div>
 				<div class="form_row">
-					<label for="customerRepeatPassword">Confirm Password</label>
-					<input type="password" id="customerRepeatPassword" required>
+					<label for="customerRepeatPassword">Confirm Password :</label>
+					<input type="password" id="customerRepeatPassword" placeholder="Repeat your password please" required>
 				</div>
-				<input id="button" type="submit" value="Register">
+				<input id="regBtn" type="submit" value="Register">
 			</form>
+
 		</main>
 	</div>
 </body>
