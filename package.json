@@ -4,9 +4,11 @@
   "devDependencies": {
     "eslint": "^3.6.0",
     "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.5.0",
+    "gulp-uncss": "^1.0.6",
     "wiredep": "^4.0.0"
   }
 }

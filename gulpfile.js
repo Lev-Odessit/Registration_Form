@@ -2,7 +2,26 @@ var gulp = require('gulp'),
 	stylus = require('gulp-stylus'),
 	rename = require('gulp-rename'),
 	minifyCSS = require('gulp-minify-css'),
+	unusing = require('gulp-unusing'),
+	connect = require('connect'),
 	wiredep = require('wiredep').stream;
+
+// Server connect
+gulp.task('connect', function () {
+	connect.server({
+		root: "app",
+		livereload: true
+	});
+});
+
+// remove unusing css classes
+gulp.task('unusing_css', function () {
+	return gulp.src('bower_components/bootstrap/dist/css/bootstrap.css')
+		.pipe(uncss({
+			html: ['app/index.html']
+		}))
+		.pipe(gulp.dest('build/css'));
+});
 
 gulp.task('css', function () {
 	return gulp.src('./app/css/styles.styl')
