@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 
 		setUpListeners: function () {
-			var form = document.getElementById('getForm');
+			var form = document.getElementById('regForm');
 			form.addEventListener('submit', registrationApp.submitForm);
 		},
 
